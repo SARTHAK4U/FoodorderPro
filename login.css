@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+}
+#navbar{
+    display: flex;
+    position: relative;
+
+}
+#navbar::before{
+    content: " ";
+    background:url('https://github.com/sarthak700/ISTE/blob/master/the-anchor-jgRD5JNKCxY-unsplash.jpg?raw=true');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#navbar p{
+    font-size: 54px;
+    padding-left: 34px;
+}
+#logo img{
+    width:60px;
+    height: 60px;
+    margin-top: 10px;
+    border: 2px groove black;
+    border-radius: 3233px;
+    transition: all;
+}
+#logo img:hover{
+    transform: translateX(800px);
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+#page{
+    position: relative;
+}
+#page::before{
+    content: " ";
+    background:url('https://github.com/sarthak700/ISTE/blob/master/8.jpg?raw=true')no-repeat center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#b1{
+    border-right: 4px groove black;
+    padding-right: 90px;
+}
+#b2{
+    
+    padding-left: 70px;
+}
+.box p{
+    font-size: 34px;
+}
+.box input, .box textarea {
+      width: 100%;
+      padding: 0.3rem;
+      border-radius: 13px;
+      font-size: 1.1rem;
+      border: 1px solid rgb(56, 29, 38);
+}
+
+.box a{
+    display: block;
+    margin-top: 13px;
+    padding-left: 13px;
+    width:50px;
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 9px;
+}
+
+.box input[type="button"]{
+    margin-top: 3px;
+    width:60px;
+}
+.box label{
+    font-size: 1.2rem;
+}
+.box form{
+    width:100%;
+}
+footer{
+    background-color:lightcoral;
+    border-radius:45px ;
+    border: 2px solid rgb(56, 29, 38);
+    text-align: center;
+    padding: 4px;
+    margin-top: 8px;
+}
+@media screen and (max-width:980px){
+    #container{
+        flex-direction: column;
+    }
+    #b1{
+        border-right:none;
+        padding-left: 70px;
+        padding-bottom: 17px;
+        border-bottom: 4px solid black;
+    }
+    #b2{
+        
+        padding-left: 70px;
+        padding-right: 90px;
+    }
+    
+    #navbar p{
+        font-size: 34px;
+        
+    }
+}

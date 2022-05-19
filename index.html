@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie.com fastest of your town</title>
+    <link rel="stylesheet" href="foodie.css">
+    <link rel="stylesheet" media="(max-width:730px)" href="phone.css">
+
+    <script>
+        (function(apiKey){
+            (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+            v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+                o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+                y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+                z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+        
+                // Call this whenever information about your visitors becomes available
+                // Please use Strings, Numbers, or Bools for value types.
+                pendo.initialize({
+                    visitor: {
+                        id: 'AfterPage2'   // Required if user is logged in
+                        // email:        // Recommended if using Pendo Feedback, or NPS Email
+                        // full_name:    // Recommended if using Pendo Feedback
+                        // role:         // Optional
+        
+                        // You can add any additional visitor level key-values here,
+                        // as long as it's not one of the above reserved names.
+                    },
+        
+                    account: {
+                        id:           'Page2made' // Required if using Pendo Feedback
+                        // name:         // Optional
+                        // is_paying:    // Recommended if using Pendo Feedback
+                        // monthly_value:// Recommended if using Pendo Feedback
+                        // planLevel:    // Optional
+                        // planPrice:    // Optional
+                        // creationDate: // Optional
+        
+                        // You can add any additional account level key-values here,
+                        // as long as it's not one of the above reserved names.
+                    }
+                });
+                pendo.track("Everyone", {
+                          plan: "Trial",
+                    });
+        })('864e187d-051b-4ac3-5d3d-aaf56fcfcc08');
+
+        // Need to hide key from clients
+        // ->soln1 : Make the API calls server-side and then serve information to the client from there
+        </script>
+        
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+ <img src="https://github.com/sarthak700/ISTE/blob/master/logo.jpg?raw=true">
+ </div>
+<ul>
+<li class="item"><a href="index.html">HOME</a></li>
+<li class="item"><a href="login.html">ORDER NOW
+</a></li>
+<li class="item"><a href="about.html">
+    ABOUT US
+</a></li>
+<li class="item"><a href="recepie.html"> 
+   SHARE
+</a></li>
+<li class="item"><a href="contact.html"> 
+   CONTACT US
+ </a></li>
+ <li class="item"><a href="ordernow.html"> 
+  SPECIAL OFFERS
+  </a></li>
+</ul>
+    </nav>
+<section id="home">
+<h1 class="ph"> WELCOME TO FOODIE</h1>
+<p>
+    Nothing brings people together like a generous spread of delicious food. It’s the universal unifier. Food serves as a cultural marker, attends every milestone and celebration, and can be dressed up or down.
+</p>
+<p>Laughter is brightest in the place where the food is.A recipe has no soul. We, as the cook, must bring soul to the recipe.     
+</p>
+<button class="btn">
+    ORDER NOW
+</button>
+</section>
+<div id="sarthak">
+<h1 class="ph">OUR SERVICES</h1>
+<div id="services"> 
+ 
+<div id="del">
+    <h3>HOME DELIVERY</h3>
+<img src="https://github.com/sarthak700/ISTE/blob/master/feature.png?raw=true">
+<p>The food at your doorstep
+
+    Why starve when you have us
+    
+    You hunger partner
+    
+    The one you can count on
+    
+    Don’t starve, just order
+    
+    Good food within minutes.</p>
+</div>
+<div id="del1">
+    <h3>BULK ORDERS</h3>
+<img src="https://github.com/sarthak700/ISTE/blob/master/feature1.png?raw=true">
+<p>Delivering happiness
+    Speedy food, good food
+    Freshness delivered
+    Straight out of the oven to your doorstep
+    Best Service to fulfil your expectations.
+    <!-- Let deliciousness twirl in your mouth. -->
+    </p>
+</div>
+<div id="del2">
+    <h3>SPECIAL ORDERS</h3>
+<img src="https://github.com/sarthak700/ISTE/blob/master/feature2.png?raw=true">
+<p>We take the teachings of nature.
+    The flavours of your wish.
+    An oasis of deliciousness.
+    You can’t stop eating, so go! 
+    Serving a lip-smacking food is our passion.  
+    <!-- Eat the food you dream about at affordable prices.</p> -->
+</div>
+</div>
+</div>
+<div class="client">
+<div><h1 class="ph">OUR CLIENTS</h1></div>
+<div id=clients>
+<img src="https://github.com/sarthak700/ISTE/blob/master/l1.jpg?raw=true">
+<img src="https://github.com/sarthak700/ISTE/blob/master/l2.png?raw=true">
+<img src="https://github.com/sarthak700/ISTE/blob/master/l3.png?raw=true">
+<img src="https://github.com/sarthak700/ISTE/blob/master/l4.jpg?raw=true">
+<img src="https://github.com/sarthak700/ISTE/blob/master/l5.png?raw=true">
+</div>
+</div>
+<section id="contact">
+    <div><h1 class="ph">CONTACT US</h1></div>
+<div class="form">
+    <form action="">
+<label for="NAME">NAME</label>
+<input type="text"name="name" id="name"placeholder="NAME">
+<label for="NAME">PHONE</label>
+<input type="text"name="name" id="phone"placeholder="PHONE">
+<label for="NAME">MESSAGE</label>
+<input type="search" name="name" id="ADDRESS"placeholder="MESSAGE">
+<label for="NAME">E-MAIL</label>
+<input type="text"name="name" id="e-mail"placeholder="E-MAIL">
+<input type="submit"name="name"id="submit">
+</form>
+</div>
+</section>
+
+<footer id="foot">
+    &#169;  all rights reserved with SARTHAK GROUP OF COMPANIES
+</footer>
+<footer class="joinus">
+    <a class="join" href="" target="_blank"><img class="img1" src="https://github.com/sarthak700/ISTE/blob/master/insta.jpg?raw=true" alt=""></a>
+    <a class="join" href="" target="_blank"><img class="img2" src="https://github.com/sarthak700/ISTE/blob/master/twitter.jpg?raw=true" alt=""></a>
+    <a class="join" href="" target="_blank"><img class="img3" src="https://github.com/sarthak700/ISTE/blob/master/facebook.jpg?raw=true" alt=""></a>
+  </footer>
+</body>
+</html>

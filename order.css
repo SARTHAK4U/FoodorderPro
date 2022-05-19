@@ -1,0 +1,89 @@
+h3{
+    text-align: center;
+    text-decoration-color: palegreen;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* browser ki default padding margin zero karne */
+}
+
+#container img{
+width:200px;
+height: 200px;
+    display: flex;
+    border: 4px groove papayawhip;
+    margin: auto;
+    transition: all;
+    transition-duration: 2s;
+}
+#container img:hover{
+transform: rotate(360deg);
+    display: flex;
+    border: 10px groove peachpuff;
+    margin: auto;
+}
+
+
+
+.contact{
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+        }
+        #contact input,label,textarea{
+            display: flex;
+            flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin:auto;
+        }
+        body::before{
+            content:"";
+            
+            background: url('https://github.com/sarthak700/ISTE/blob/master/c.jpg?raw=true')no-repeat center/cover;
+            height:150%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity:0.6;
+            }
+            h1
+            { text-align: center;}
+            #btn{
+text-align: center;
+color: peru;
+border: 5px ridge tomato;
+
+            }
+            .c {
+display: flex;
+flex-direction: column;
+margin: auto;
+justify-content: center;
+text-align: center;
+font-family: cursive;            }
+#btn{
+width: 10%;
+margin: auto;
+transition: all;
+transition-duration: 2s;
+}
+#btn:hover{
+    transform: translate(100%);
+    border: 6px ridge palevioletred;
+    border-radius: 3000px;
+    }
+    #time{
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+margin: auto;
+font-size: large;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  
+
+
+
+
+
+
+
+    <h1>our sponsors</h1>
+    <div id="container">
+<img src="https://github.com/sarthak700/ISTE/blob/master/saa.jpg?raw=true" alt="" id="sam">
+    </div>
+    <section id="contact">
+        <div><h1 class="ph">CONTACT US</h1></div>
+    <div class="form">
+        <form action="">
+    <label for="NAME">NAME</label>
+    <input type="text"name="name" id="name"placeholder="NAME">
+    <label for="NAME">PHONE</label>
+    <input type="text"name="name" id="phone"placeholder="PHONE">
+    <label for="NAME">SHARE YOUR RECEPIE</label>
+    <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+    <label for="NAME">E-MAIL</label>
+    <input type="text"name="name" id="e-mail"placeholder="E-MAIL">
+    <input type="submit"name="name"id="submit">
+    </form>
+    </div>
+    <div class="c">
+    <h1>OFFER</h1>
+    <p id="para">BEST RECEPIE WINS CASH PRIZE OF RS 5000 AND FREE ORDERING OF FOOD WORTH RS 600.</p>
+    <button id="btn" onclick="run()">SHOW/HIDE</button>
+    </div>
+    <h3>your active time and current time</h3>
+    <div id="time">
+    
+    <p id="p"></p>
+    
+    </div>
+    </section>
+    <script>
+let feedback=prompt("how are our services","not rated");
+let nav=document.getElementById('container')
+console.log(nav.innerHTML);
+console.log(nav.innerHTML==`<img src="https://github.com/sarthak700/ISTE/blob/master/l1.jpg?raw=true" alt="" id="sam">`);
+    nav.innerHTML=`<img src="https://github.com/sarthak700/ISTE/blob/master/l1.jpg?raw=true" alt="" id="sam">`;
+function greet(){
+if(nav.innerHTML==`<img src="https://github.com/sarthak700/ISTE/blob/master/l1.jpg?raw=true" alt="" id="sam">`)
+{
+    nav.innerHTML=`<img src="https://github.com/sarthak700/ISTE/blob/master/l2.png?raw=true" alt="" id="sam">`;
+
+}
+else if(nav.innerHTML==`<img src="https://github.com/sarthak700/ISTE/blob/master/l2.png?raw=true" alt="" id="sam">`)
+{
+    nav.innerHTML=`<img src="https://github.com/sarthak700/ISTE/blob/master/l3.png?raw=true" alt="" id="sam">`;
+}
+else if(nav.innerHTML==`<img src="https://github.com/sarthak700/ISTE/blob/master/l3.png?raw=true" alt="" id="sam">`){
+    nav.innerHTML=`<img src="https://github.com/sarthak700/ISTE/blob/master/l5.png?raw=true" alt="" id="sam">`;
+}
+else{
+    nav.innerHTML=`<img src="https://github.com/sarthak700/ISTE/blob/master/l1.jpg?raw=true" alt="" id="sam">`;
+}
+
+}
+setInterval(greet,2000);
+let para=document.getElementById('para');
+// javascript mein jo kuch bhi bhar se ata bo string ki form mein ata
+function run()
+{
+if(para.style.display!='none')
+{
+    para.style.display='none';
+}
+else{
+    para.style.display='block';
+}
+
+}
+ let time1=0;
+ let t=document.getElementById('p')
+ console.log(p);
+ function fix()
+ {
+t.innerHTML=time1+" seconds"+"\n "+Date();
+time1++;
+ }
+ setInterval(fix,1000);
+
+
+    </script>
+</body>
+</html>

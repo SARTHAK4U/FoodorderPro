@@ -1,0 +1,68 @@
+
+#navbar ul{
+    flex-direction: column;
+    display: flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+  text-align: center;
+  width: 100%; 
+  align-items: center;
+}
+#navbar{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        display: flex;
+    position: relative;
+}
+#navbar::before{
+    content:"";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.4;
+    top:0;
+    }
+
+#home{
+    flex-direction: column;
+}
+#clients img{
+    width: 60px;
+    height: 50px;
+    border: 4px ridge greenyellow;
+    border-radius: 10px;
+    margin: 5px;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          width:100%;
+          overflow:hidden;
+        }   
+        #services{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 6px;
+            margin: 0px 10px;
+        }
+        .client::before{
+            content:"";
+            background: url('/download\ \(1\).jpg')no-repeat center/cover;
+            height:370px;
+            width: 97%;
+            border: 5px ridge tomato;
+            position: absolute;
+            z-index: -1;
+            opacity:0.9;
+            }
+            h3{
+
+                font-size: small;
+            }
